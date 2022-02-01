@@ -10,8 +10,29 @@ let package = Package(
     ],
     products: [
       .library(
-        name: "BetclicUmbrella",
-        targets: ["TCCore", "TCIAB", "TCPrivacy", "TCSDK", "ServiceChat", "ServiceCore", "FraudForce", "GooglePlaces"]),
+        name: "TCCore",
+        targets: ["TCCore"]),
+      .library(
+        name: "TCIAB",
+        targets: ["TCIAB"]),
+      .library(
+        name: "TCPrivacy",
+        targets: ["TCPrivacy"]),
+      .library(
+        name: "TCSDK",
+        targets: ["TCSDK"]),
+      .library(
+        name: "ServiceChat",
+        targets: ["ServiceChat"]),
+      .library(
+        name: "ServiceCore",
+        targets: ["ServiceCore"]),
+      .library(
+        name: "FraudForce",
+        targets: ["FraudForce"]),
+      .library(
+        name: "GooglePlaces",
+        targets: ["GooglePlaces"]),
     ],
     targets: [
       .binaryTarget(
