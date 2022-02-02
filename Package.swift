@@ -10,54 +10,12 @@ let package = Package(
     ],
     products: [
       .library(
-        name: "TCCore",
-        targets: ["TCCore"]),
-      .library(
-        name: "TCIAB",
-        targets: ["TCIAB"]),
-      .library(
-        name: "TCPrivacy",
-        targets: ["TCPrivacy"]),
-      .library(
-        name: "TCSDK",
-        targets: ["TCSDK"]),
-      .library(
-        name: "ServiceChat",
-        targets: ["ServiceChat"]),
-      .library(
-        name: "ServiceCore",
-        targets: ["ServiceCore"]),
-      .library(
         name: "FraudForce",
-        targets: ["FraudForce"]),
-      .library(
-        name: "GooglePlaces",
-        targets: ["GooglePlaces"]),
+        targets: ["FraudForce"])
     ],
     targets: [
       .binaryTarget(
-        name: "TCCore",
-        path: "./Sources/TCCore/TCCore.xcframework"),
-      .binaryTarget(
-        name: "TCIAB",
-        path: "./Sources/TCIAB/TCIAB.xcframework"),
-      .binaryTarget(
-        name: "TCPrivacy",
-        path: "./Sources/TCPrivacy/TCPrivacy.xcframework"),
-      .binaryTarget(
-        name: "TCSDK",
-        path: "./Sources/TCSDK/TCSDK.xcframework"),
-      .binaryTarget(
-        name: "ServiceChat",
-        path: "./Sources/ServiceChat/ServiceChat.xcframework"),
-      .binaryTarget(
-        name: "ServiceCore",
-        path: "./Sources/ServiceCore/ServiceCore.xcframework"),
-      .binaryTarget(
         name: "FraudForce",
-        path: "./Sources/FraudForce/FraudForce.xcframework"),
-      .binaryTarget(
-        name: "GooglePlaces",
-        path: "./Sources/GooglePlaces/GooglePlaces.xcframework")
+        path: "./Sources/FraudForce/FraudForce.xcframework")
     ]
 )
