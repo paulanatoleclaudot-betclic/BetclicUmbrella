@@ -23,7 +23,13 @@ let package = Package(
             targets: ["TCSDK"]),
         .library(
             name: "FraudForce",
-            targets: ["FraudForce"])
+            targets: ["FraudForce"]),
+        .library(
+            name: "ServiceChat",
+            targets: ["ServiceChat"]),
+        .library(
+            name: "ServiceCore",
+            targets: ["ServiceCore"])
     ],
     targets: [
         .binaryTarget(
@@ -40,6 +46,12 @@ let package = Package(
             path: "./Sources/TCSDK/TCSDK.xcframework"),
         .binaryTarget(
             name: "FraudForce",
-            path: "./Sources/FraudForce/FraudForce.xcframework")
+            path: "./Sources/FraudForce/FraudForce.xcframework"),
+        .binaryTarget(
+            name: "ServiceChat",
+            path: "./Sources/ServiceChat/ServiceChat.xcframework"),
+        .binaryTarget(
+            name: "ServiceCore",
+            path: "./Sources/ServiceCore/ServiceCore.xcframework")
     ]
 )
