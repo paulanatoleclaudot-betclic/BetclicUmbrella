@@ -25,6 +25,9 @@ let package = Package(
             name: "FraudForce",
             targets: ["FraudForce"]),
         .library(
+            name: "GooglePlaces",
+            targets: ["GooglePlaces"]),
+        .library(
             name: "ServiceChat",
             targets: ["ServiceChat"]),
         .library(
@@ -47,6 +50,9 @@ let package = Package(
         .binaryTarget(
             name: "FraudForce",
             path: "./Sources/FraudForce/FraudForce.xcframework"),
+        .binaryTarget(
+            name: "GooglePlaces",
+            path: "./Sources/GooglePlaces/GooglePlaces.xcframework"),
         .binaryTarget(
             name: "ServiceChat",
             path: "./Sources/ServiceChat/ServiceChat.xcframework"),
