@@ -13,12 +13,6 @@ Trust commander is the name of a set of 4 SDKs related to GDPR:
 
 There are all Apple XCFrameworks but doesn't contain yet the M1 architecture
 
-## SalesForce
-
-SalesForce is the name of a set of 2 SDKs related to customers service chat:
-- ServiceChat
-- ServiceCore
-
 There are all Apple XCFrameworks but doesn't contain yet the M1 architecture
 
 ## FraudForce (IOvation)
