@@ -13,8 +13,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- * A class containing the Plus codes representation for a location.
- * See https://plus.codes/ for more details.
+ * A class containing the Plus codes representation for a location. See https://plus.codes/ for more
+ * details.
  */
 @interface GMSPlusCode : NSObject
 

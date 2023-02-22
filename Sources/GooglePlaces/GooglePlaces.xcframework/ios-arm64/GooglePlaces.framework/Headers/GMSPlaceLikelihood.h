@@ -22,9 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface GMSPlaceLikelihood : NSObject <NSCopying>
 
-/**
- * The place contained in this place likelihood.
- */
+/** The place contained in this place likelihood. */
 @property(nonatomic, strong, readonly) GMSPlace *place;
 
 /**
@@ -37,9 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPlace:(GMSPlace *)place
                    likelihood:(double)likelihood NS_DESIGNATED_INITIALIZER;
 
-/**
- * Default init is not available. Please use the designated initializer.
- */
+/** Default init is not available. Please use the designated initializer. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

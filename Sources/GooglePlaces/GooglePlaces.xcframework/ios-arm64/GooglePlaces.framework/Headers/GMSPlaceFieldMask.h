@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -45,6 +46,10 @@ typedef NS_OPTIONS(NSUInteger, GMSPlaceField) {
   GMSPlaceFieldBusinessStatus = 1 << 16,
   GMSPlaceFieldIconImageURL = 1 << 17,
   GMSPlaceFieldIconBackgroundColor = 1 << 18,
+  GMSPlaceFieldTakeout = 1 << 19,
+  GMSPlaceFieldDelivery = 1 << 20,
+  GMSPlaceFieldDineIn = 1 << 21,
+  GMSPlaceFieldCurbsidePickup = 1 << 22,
   GMSPlaceFieldAll = NSUIntegerMax,
 };
 

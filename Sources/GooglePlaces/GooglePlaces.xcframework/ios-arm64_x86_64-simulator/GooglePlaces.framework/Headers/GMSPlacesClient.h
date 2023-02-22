@@ -125,9 +125,7 @@ typedef void (^GMSPlacePhotoImageResultCallback)(UIImage *_Nullable photo,
  */
 + (NSString *)openSourceLicenseInfo;
 
-/**
- * Returns the version for this release of the Google Places SDK for iOS.. For example, "1.0.0".
- */
+/** Returns the version for this release of the Google Places SDK for iOS.. For example, "1.0.0". */
 + (NSString *)SDKVersion;
 
 /**

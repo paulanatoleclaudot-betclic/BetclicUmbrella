@@ -25,14 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly) NSUInteger offset;
 
-/**
- * The length of the matched fragment.
- */
+/** The length of the matched fragment. */
 @property(nonatomic, readonly) NSUInteger length;
 
-/**
- * Initializer is not available.
- */
+/** Initializer is not available. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

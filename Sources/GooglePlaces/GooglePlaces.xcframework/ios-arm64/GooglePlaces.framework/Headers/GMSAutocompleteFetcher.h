@@ -16,21 +16,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * Protocol for objects that can receive callbacks from GMSAutocompleteFetcher
- */
+/** Protocol for objects that can receive callbacks from GMSAutocompleteFetcher. */
 @protocol GMSAutocompleteFetcherDelegate <NSObject>
 
 @required
 
 /**
  * Called when autocomplete predictions are available.
+ *
  * @param predictions an array of GMSAutocompletePrediction objects.
  */
 - (void)didAutocompleteWithPredictions:(NSArray<GMSAutocompletePrediction *> *)predictions;
 
 /**
  * Called when an autocomplete request returns an error.
+ *
  * @param error the error that was received.
  */
 - (void)didFailAutocompleteWithError:(NSError *)error;
@@ -63,9 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** Filter to apply to autocomplete suggestions (can be nil). */
 @property(nonatomic, strong, nullable) GMSAutocompleteFilter *autocompleteFilter;
 
-/**
- * Provide a |GMSAutocompleteSessionToken| for tracking the specific autocomplete query flow.
- */
+/** Provide a |GMSAutocompleteSessionToken| for tracking the specific autocomplete query flow. */
 - (void)provideSessionToken:(nullable GMSAutocompleteSessionToken *)sessionToken;
 
 /**

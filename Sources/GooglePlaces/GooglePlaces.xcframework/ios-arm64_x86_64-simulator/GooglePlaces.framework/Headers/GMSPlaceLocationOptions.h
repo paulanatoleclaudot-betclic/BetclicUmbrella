@@ -15,31 +15,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Protocols
 
-/*
- * Protocol for specifying that the location can be used as search bias.
- */
+/** Protocol for specifying that the location can be used as search bias. */
 @protocol GMSPlaceLocationBias <NSObject, NSCopying>
 
-/*
- * Returns the location bias as |NSURLQueryItem|.
- */
+/** Returns the location bias as |NSURLQueryItem|. */
 - (NSURLQueryItem *)locationBiasURLQueryItem;
 
 @end
 
-/*
- * Protocol for specifying that the location can be used as search restriction.
- */
+/** Protocol for specifying that the location can be used as search restriction. */
 @protocol GMSPlaceLocationRestriction <NSObject, NSCopying>
 
-/*
- * Returns the location restriction as |NSURLQueryItem|.
- */
+/** Returns the location restriction as |NSURLQueryItem|. */
 - (NSURLQueryItem *)locationRestrictionURLQueryItem;
 
 @end
 
-/*
+/**
  * Returns a rectangular location to filter place results inside the boundaries.
  * Supports filtering as a restriction where results must be inside the bounds, or as a bias where
  * results in the bounds are preferred.

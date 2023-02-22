@@ -8,7 +8,6 @@
 //  Service: https://developers.google.com/maps/terms
 //
 
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -29,9 +28,7 @@ extern NSAttributedStringKey const kGMSAutocompleteMatchAttribute;
 extern NSString *const kGMSAutocompleteMatchAttribute;
 #endif
 
-/**
- * This class represents a prediction of a full query based on a partially typed string.
- */
+/** This class represents a prediction of a full query based on a partially typed string. */
 @interface GMSAutocompletePrediction : NSObject
 
 /**
@@ -96,9 +93,7 @@ extern NSString *const kGMSAutocompleteMatchAttribute;
  */
 @property(nonatomic, readonly, nullable) NSNumber *distanceMeters;
 
-/**
- * Initializer is not available.
- */
+/** Initializer is not available. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

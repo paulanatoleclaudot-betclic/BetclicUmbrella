@@ -122,8 +122,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, nullable) IBInspectable UIColor *tintColor;
 
 /**
- * Specify individual place details to fetch for object |GMSPlace|.
- * Defaults to returning all details if not overridden.
+ * Specify individual place details to fetch for object |GMSPlace|. Defaults to returning all
+ * details if not overridden.
  */
 @property(nonatomic, assign) GMSPlaceField placeFields;
 

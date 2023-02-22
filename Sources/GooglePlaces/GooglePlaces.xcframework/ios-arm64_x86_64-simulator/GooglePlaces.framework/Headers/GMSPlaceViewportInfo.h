@@ -23,8 +23,8 @@
 @property(nonatomic, readonly) CLLocationCoordinate2D southWest;
 
 /**
- * Returns NO if this bounds does not contain any points. For example,
- * [[GMSPlaceViewportInfo alloc] init].valid == NO.
+ * Returns NO if this bounds does not contain any points. For example, [[GMSPlaceViewportInfo alloc]
+ * init].valid == NO.
  */
 @property(nonatomic, readonly, getter=isValid) BOOL valid;
 

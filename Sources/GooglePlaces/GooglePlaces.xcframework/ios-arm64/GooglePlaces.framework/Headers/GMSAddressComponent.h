@@ -14,9 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * Represents a component of an address, e.g., street number, postcode, city, etc.
- */
+/** Represents a component of an address, e.g., street number, postcode, city, etc. */
 @interface GMSAddressComponent : NSObject
 
 /**
