@@ -5,7 +5,7 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -28,22 +28,18 @@ NS_ASSUME_NONNULL_BEGIN
  * types.
  */
 typedef NS_ENUM(NSInteger, GMSPlacesAutocompleteTypeFilter) {
-  /**
-   * All results.
-   */
+  /** All results. */
   kGMSPlacesAutocompleteTypeFilterNoFilter,
-  /**
-   * Geocoding results, as opposed to business results.
-   */
+
+  /** Geocoding results, as opposed to business results. */
   kGMSPlacesAutocompleteTypeFilterGeocode,
-  /**
-   * Geocoding results with a precise address.
-   */
+
+  /** Geocoding results with a precise address. */
   kGMSPlacesAutocompleteTypeFilterAddress,
-  /**
-   * Business results.
-   */
+
+  /** Business results. */
   kGMSPlacesAutocompleteTypeFilterEstablishment,
+
   /**
    * Results that match the following types:
    * "locality",
@@ -54,6 +50,7 @@ typedef NS_ENUM(NSInteger, GMSPlacesAutocompleteTypeFilter) {
    * "administrative_area_level_2"
    */
   kGMSPlacesAutocompleteTypeFilterRegion,
+
   /**
    * Results that match the following types:
    * "locality",
@@ -118,14 +115,10 @@ typedef NS_ENUM(NSInteger, GMSPlacesAutocompleteTypeFilter) {
  */
 @property(nonatomic, nullable) CLLocation *origin;
 
-/**
- * The optional location bias to prefer place results near the location.
- */
+/** The optional location bias to prefer place results near the location. */
 @property(nonatomic, nullable) id<GMSPlaceLocationBias> locationBias;
 
-/**
- * The optional location restriction to limit the place results to.
- */
+/** The optional location restriction to limit the place results to. */
 @property(nonatomic, nullable) id<GMSPlaceLocationRestriction> locationRestriction;
 
 @end
